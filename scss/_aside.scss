@@ -1,0 +1,31 @@
+.asideIndex {
+    grid-area: aside;
+    h2 {
+        color: $colorletra;
+        font-size: 6rem;
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 3rem;
+        font-family: $letratitulo;
+      }
+      div {
+          background-color: red;
+          width: 300px;
+          height: 250px;
+          position: relative;
+          top: 3rem;
+          left: 3rem;
+          transition: all 2s;
+      }
+      div img {
+          width: 300px;
+        position: relative;
+        top: 2.5rem;
+        left: 3rem;
+ }
+div:hover {
+          position: relative;
+          left: 5rem;
+          top: 5rem;
+      }
+}

@@ -1,0 +1,23 @@
+.mainIndex {
+    grid-area: main;
+    .contenedorUno {
+        display: flex;
+        background-color: red;
+         }
+ .barba {
+        width: 50%;
+    }
+ .peine {
+        width: 20%;
+        height: 30%;
+        position: relative;
+        top: 7rem;
+        left: 15rem;
+    }
+     h1 {
+        color: $colorletra;
+        font-size: 8rem;
+        font-family: $letratitulo;
+         }
+    
+}

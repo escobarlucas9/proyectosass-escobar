@@ -1,0 +1,61 @@
+$letratitulo:  'Cantata One', serif;
+$colorletra: rgba(255, 255, 255, 0.89);
+$colorfondo: rgb(0, 0, 0) ;
+$letraparrafo: 'Times New Roman', Times, serif;
+$letraheader: 'Sansita Swashed', cursive;
+
+@import "header";
+@import "main";
+@import "aside";
+@import "article";
+@import "footer";
+
+body {
+    background-color: $colorfondo;
+}
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "aside articleParrafo"
+    "articleIndex articleIndex"
+    "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr 1fr auto ;
+}
+@media screen and (max-width:600px) {
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "articleParrafo"
+            "articleIndex"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+    }
+       .peine {
+        display: none; }
+      .mainIndex h1 {
+        font-size: 2rem; }
+      .asideIndex h2 {
+        font-size: 3rem; }
+      .parrafoUno {
+        text-align: center; }
+      .articleIndex {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .asideIndex div img {
+        width: 300px;
+       
+       } }
+
+
+
+
+
+

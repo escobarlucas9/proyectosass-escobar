@@ -1,0 +1,124 @@
+header {
+  grid-area: header; }
+  header .navbar-brand {
+    font-family: "Cantata One", serif; }
+  header nav ul li {
+    font-size: 1.2rem; }
+  header a {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-family: "Times New Roman", Times, serif; }
+
+.mainIndex {
+  grid-area: main; }
+  .mainIndex .contenedorUno {
+    display: flex;
+    background-color: red; }
+  .mainIndex .barba {
+    width: 50%; }
+  .mainIndex .peine {
+    width: 20%;
+    height: 30%;
+    position: relative;
+    top: 7rem;
+    left: 15rem; }
+  .mainIndex h1 {
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 8rem;
+    font-family: "Cantata One", serif; }
+
+.asideIndex {
+  grid-area: aside; }
+  .asideIndex h2 {
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 6rem;
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    font-family: "Cantata One", serif; }
+  .asideIndex div {
+    background-color: red;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+    transition: all 2s; }
+  .asideIndex div img {
+    width: 300px;
+    position: relative;
+    top: 2.5rem;
+    left: 3rem; }
+  .asideIndex div:hover {
+    position: relative;
+    left: 5rem;
+    top: 5rem; }
+
+.articleParrafo {
+  grid-area: articleParrafo; }
+  .articleParrafo p {
+    text-align: right;
+    line-height: 2.5rem;
+    padding: 2rem;
+    color: rgba(255, 255, 255, 0.89);
+    margin-top: 10rem;
+    font-family: "Times New Roman", Times, serif; }
+
+.articleIndex {
+  grid-area: articleIndex;
+  display: flex;
+  padding-bottom: 6rem; }
+  .articleIndex p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 50px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 8px;
+    color: rgba(255, 255, 255, 0.89);
+    margin-top: 6rem; }
+  .articleIndex img {
+    width: 350px;
+    position: relative;
+    top: 3rem;
+    right: 2rem;
+    transition: all 2s; }
+  .articleIndex img:hover {
+    transform: scale(0.2); }
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  padding: 1rem; }
+  footer p {
+    color: rgba(255, 255, 255, 0.89);
+    text-align: center; }
+
+body {
+  background-color: black; }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "header header" "main main" "aside articleParrafo" "articleIndex articleIndex" "footer footer";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr 1fr auto; }
+
+@media screen and (max-width: 600px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "header" "main" "aside" "articleParrafo" "articleIndex" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr auto auto; }
+  .peine {
+    display: none; }
+  .mainIndex h1 {
+    font-size: 2rem; }
+  .asideIndex h2 {
+    font-size: 3rem; }
+  .parrafoUno {
+    text-align: center; }
+  .articleIndex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .asideIndex div img {
+    width: 300px; } }

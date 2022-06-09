@@ -1,0 +1,36 @@
+.articleParrafo {
+    grid-area: articleParrafo;
+
+p {
+    text-align: right;
+    line-height: 2.5rem;
+    padding: 2rem;
+    color: $colorletra;
+    margin-top: 10rem;
+    font-family: $letraparrafo;
+}
+}
+.articleIndex {
+    grid-area: articleIndex;
+    display: flex;
+    padding-bottom:6rem ;
+ p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 50px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 8px;
+    color: $colorletra;
+    margin-top: 6rem;
+}
+ img {
+    width: 350px;
+    position: relative;
+    top: 3rem;
+    right: 2rem;
+    transition: all 2s;
+}
+ img:hover {
+    transform: scale(0.2);
+}
+}
